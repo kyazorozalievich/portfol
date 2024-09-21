@@ -1,0 +1,49 @@
+.about {
+  margin-top: 10px;
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    .aboutAll {
+      display: flex;
+      align-items: start;
+      .aboutText {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 30px;
+        .aboutMe {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          h5 {
+            font-size: 20px;
+            font-weight: 600;
+            color: rgb(255, 98, 0);
+          }
+          h1 {
+            font-size: 30px;
+            font-weight: 600;
+          }
+          hr {
+            width: 200px;
+            margin-left: 40px;
+          }
+        }
+        .aboutDescription {
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          gap: 20px;
+          p {
+            width: 600px;
+          }
+        }
+      }
+      img {
+        margin-left: 50px;
+        width: 25%;
+        border-radius: 10px;
+      }
+    }
+  }
+}

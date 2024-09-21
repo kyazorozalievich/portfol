@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+button{
+  cursor: pointer;
+}
+
+body {
+  background: black;
+  color: white;
+}
+.headerText:hover {
+  color: rgb(255, 98, 0);
+  transition: 0.8s;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+.poppins:hover {
+  color: rgb(255, 98, 0);
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+span {
+  cursor: pointer;
+  color: rgb(255, 132, 0);
+  font-size: 15px;
+}
+
+.header {
+  background: rgba(255, 255, 255, 0.001);
+  backdrop-filter: blur(10px);
+  z-index: 48;
+}

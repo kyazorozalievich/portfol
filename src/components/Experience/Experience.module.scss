@@ -1,0 +1,63 @@
+.experience {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    .experienceAll {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 30px;
+      .experienceMe {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        h5 {
+          font-size: 20px;
+          font-weight: 600;
+          color: rgb(255, 98, 0);
+        }
+        h1 {
+          font-size: 30px;
+          font-weight: 600;
+        }
+        hr {
+          width: 200px;
+          margin-left: 40px;
+        }
+      }
+      .experienceBlocks {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 30px;
+        .experienceBlock {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          cursor: pointer;
+          gap: 20px;
+          .image {
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgb(97, 96, 96);
+            border-radius: 50px;
+            img {
+              width: 50%;
+              height: auto;
+              object-fit: cover;
+            }
+          }
+          h3 {
+            font-size: 15px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

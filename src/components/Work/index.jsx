@@ -2,7 +2,7 @@ import React from "react";
 import tmdb from "../../assets/image/tmdb.png";
 import watch from "../../assets/image/watch.png";
 import food from "../../assets/image/food.png";
-import strongpass from "../../assets/image/StrongPass.png";
+import strongpass from "../../assets/image/strongPass.png";
 import { LuGithub } from "react-icons/lu";
 import { FaRegShareFromSquare } from "react-icons/fa6";
 import scss from "./Work.module.scss";

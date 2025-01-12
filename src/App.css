@@ -13,6 +13,11 @@ a {
   width: 90%;
   padding-inline: 40px;
 }
+@media (max-width: 768px) {
+  .container {
+    padding-inline: 10px;
+  }
+}
 
 button {
   cursor: pointer;

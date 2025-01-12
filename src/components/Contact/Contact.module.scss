@@ -1,84 +1,261 @@
 .contact {
-  .container {
-    width: 100%;
-    margin: 0 auto;
-    .contactAll {
+  width: 100%;
+  .contactAll {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+    .contactMe {
       display: flex;
-      align-items: start;
-      flex-direction: column;
-      gap: 30px;
-      .contactMe {
+      align-items: center;
+      gap: 20px;
+      h5 {
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(255, 98, 0);
+      }
+      h1 {
+        font-size: 30px;
+        font-weight: 600;
+      }
+      hr {
+        width: 200px;
+        margin-left: 40px;
+      }
+    }
+    .contactInputs {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .contactInputDiv {
         display: flex;
         align-items: center;
-        gap: 20px;
-        h5 {
-          font-size: 20px;
-          font-weight: 600;
-          color: rgb(255, 98, 0);
-        }
+        flex-direction: column;
         h1 {
-          font-size: 30px;
+          font-size: 35px;
           font-weight: 600;
+        }
+        p {
+          width: 500px;
+          display: flex;
+          text-align: center;
+        }
+        form {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          gap: 50px;
+          margin-top: 50px;
+          .contactInputAll {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 450px;
+            border-bottom: 2px solid rgb(255, 98, 0);
+
+            input {
+              padding: 10px;
+              width: 400px;
+              background: transparent;
+              outline: none;
+            }
+            textarea {
+              padding: 10px;
+              width: 400px;
+              background: transparent;
+              outline: none;
+            }
+
+            a {
+              font-size: 20px;
+            }
+          }
+          button {
+            border: 2px solid rgb(255, 98, 0);
+            width: 200px;
+            height: 40px;
+            color: rgb(255, 98, 0);
+            font-size: 15px;
+            border-radius: 10px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact {
+    .contactAll {
+      .contactMe {
+        h1 {
+          font-size: 25px;
+        }
+        h5 {
+          font-size: 15px;
         }
         hr {
-          width: 200px;
-          margin-left: 40px;
+          width: 150px;
         }
       }
       .contactInputs {
-        display: flex;
-        padding-left: 250px;
         .contactInputDiv {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
           h1 {
-            font-size: 35px;
-            font-weight: 600;
+            font-size: 25px;
           }
           p {
-            width: 500px;
-            display: flex;
-            text-align: center;
+            font-size: 12px;
+            width: 70%;
           }
           form {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            gap: 50px;
-            margin-top: 50px;
+            gap: 20px;
             .contactInputAll {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                width: 450px;
-                border-bottom: 2px solid rgb(255, 98, 0);
-
-              input {
-                padding: 10px;
-                width: 400px;
-                background: transparent;
-                outline: none;
-              }
-              textarea {
-                padding: 10px;
-                width: 400px;
-                background: transparent;
-                outline: none;
-              }
-
+              width: 350px;
               a {
                 font-size: 20px;
               }
             }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .contact {
+    .contactAll {
+      .contactMe {
+        h1 {
+          font-size: 20px;
+        }
+        h5 {
+          font-size: 15px;
+        }
+        hr {
+          width: 150px;
+        }
+      }
+      .contactInputs {
+        .contactInputDiv {
+          h1 {
+            font-size: 20px;
+          }
+          p {
+            font-size: 12px;
+            width: 70%;
+          }
+          form {
+            gap: 20px;
+            .contactInputAll {
+              width: 350px;
+              input {
+                font-size: 12px;
+              }
+              textarea {
+                font-size: 12px;
+              }
+              a {
+                font-size: 15px;
+              }
+            }
             button {
-              border: 2px solid rgb(255, 98, 0);
+              width: 150px;
+              height: 35px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 445px) {
+  .contact {
+    .contactAll {
+      .contactMe {
+        h1 {
+          font-size: 15px;
+        }
+        h5 {
+          font-size: 12px;
+        }
+        hr {
+          width: 100px;
+        }
+      }
+      .contactInputs {
+        .contactInputDiv {
+          h1 {
+            font-size: 15px;
+          }
+          p {
+            font-size: 10px;
+            width: 70%;
+          }
+          form {
+            gap: 20px;
+            .contactInputAll {
+              width: 250px;
+              input {
+                font-size: 12px;
+              }
+              textarea {
+                font-size: 12px;
+              }
+              a {
+                font-size: 15px;
+              }
+            }
+            button {
+              width: 100px;
+              height: 30px;
+              font-size: 10px;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 355px) {
+  .contact {
+    .contactAll {
+      .contactMe {
+        hr {
+          width: 50px;
+        }
+      }
+      .contactInputs {
+        .contactInputDiv {
+          h1 {
+            font-size: 15px;
+          }
+          p {
+            font-size: 10px;
+            width: 100%;
+          }
+          form {
+            gap: 10px;
+            .contactInputAll {
               width: 200px;
-              height: 40px;
-              color: rgb(255, 98, 0);
-              font-size: 15px;
-              border-radius: 10px;
-              font-weight: 600;
+              input {
+                font-size: 12px;
+              }
+              textarea {
+                font-size: 12px;
+              }
+              a {
+                font-size: 12px;
+              }
+            }
+            button {
+              width: 100px;
+              height: 30px;
+              font-size: 10px;
+              border-radius: 5px;
             }
           }
         }

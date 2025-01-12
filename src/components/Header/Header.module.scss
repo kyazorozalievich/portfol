@@ -5,38 +5,111 @@
   height: 80px;
   position: sticky;
   top: 0;
-  .container {
-    width: 90%;
-    margin: 0 auto;
-    .headerDetail {
+  width: 100%;
+  .headerDetail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .headerImage {
+      width: 200px;
+      height: 100px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      .headerImage {
-        width: 200px;
-        height: 100px;
+      padding-bottom: 20px;
+      img {
+        width: 80%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .headerText {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      .link {
+        font-size: 15px;
+        font-weight: 700;
         display: flex;
-        align-items: center;
-        padding-bottom: 20px;
+        align-items: end;
+        gap: 10px;
+        span {
+          color: rgb(255, 98, 0);
+        }
+      }
+      .link:hover {
+        color: rgb(255, 98, 0);
+        transition: 0.8s;
+      }
+    }
+    .menu {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    .headerDetail {
+      .headerText {
+        gap: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  .header {
+    .headerDetail {
+      .headerImage {
+        width: 150px;
+        height: 100px;
       }
       .headerText {
-        display: flex;
-        align-items: center;
-        gap: 40px;
         .link {
-          font-size: 15px;
-          font-weight: 700;
-          display: flex;
-          align-items: end;
-          gap: 10px;
+          font-size: 12px;
           span {
-          color: rgb(255, 98, 0);
+            font-size: 12px;
           }
         }
-        .link:hover {
-          color: rgb(255, 98, 0);
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    height: 60px;
+    .headerDetail {
+      .headerImage {
+        width: 120px;
+        height: 80px;
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .header {
+    .headerDetail {
+      .headerText {
+        display: none;
+      }
+      .menu {
+        display: block;
+        font-size: 20px;
+        &:hover {
           transition: 0.8s;
+          color: rgb(255, 98, 0);
         }
+      }
+    }
+  }
+}
+@media (max-width: 580px) {
+  .header {
+    .headerDetail {
+      .headerImage {
+        margin-top: 20px;
+        height: 40px;
+        width: 100px;
       }
     }
   }

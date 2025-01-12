@@ -39,7 +39,7 @@ const Contact = () => {
         progress: undefined,
         theme: "dark",
       });
-      
+
       let my_id = `-1002155692436`;
       let token = `7379926721:AAGdHk5RpkeAFr5TOZApxisySaGqta-Lws4`;
       let api_key = ` https://api.telegram.org/bot${token}/sendMessage`;
@@ -64,7 +64,7 @@ const Contact = () => {
 
   return (
     <div className={scss.contact}>
-      <div className={scss.container}>
+      <div className='container'>
         <ToastContainer />
         <div className={scss.contactAll}>
           <div className={scss.contactMe}>
@@ -74,7 +74,7 @@ const Contact = () => {
           </div>
           <div className={scss.contactInputs}>
             <div className={scss.contactInputDiv}>
-              <h1>Свяжитесь С Нами</h1>
+              <h1>Свяжитесь с нами</h1>
               <p>
                 Хотя сейчас я не ищу новых возможностей, мой почтовый ящик
                 всегда открыт. Если у вас есть вопрос или вы просто хотите
@@ -99,7 +99,7 @@ const Contact = () => {
                     onChange={(e) => setEmail(e.target.value)}
                     value={email}
                   />
-                  <a>
+                  <a> 
                     <HiOutlineMail />
                   </a>
                 </div>
@@ -113,7 +113,7 @@ const Contact = () => {
                     <MdOutlineDescription />
                   </a>
                 </div>
-                <button onClick={()=> submitTelegram()}>Отправить</button>
+                <button onClick={() => submitTelegram()}>Отправить</button>
               </form>
             </div>
           </div>

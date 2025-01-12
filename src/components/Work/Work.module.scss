@@ -1,150 +1,445 @@
 .work {
-  .container {
-    width: 100%;
-    margin: 0 auto;
-    .workAll {
-        display: flex;
-        align-items: start;
-        flex-direction: column;
-        gap: 50px;
-      .workMe {
+  width: 100%;
+  .workAll {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 50px;
+    .workMe {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      h5 {
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(255, 98, 0);
+      }
+      h1 {
+        font-size: 30px;
+        font-weight: 600;
+      }
+      hr {
+        width: 200px;
+        margin-left: 40px;
+      }
+    }
+    .workBlocks {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 50px;
+      h1 {
+        font-weight: 600;
+        color: white;
+        font-size: 20px;
+        background: #00000062;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      h3 {
+        font-size: 20px;
+        color: rgb(255, 98, 0);
+        font-weight: 600;
+      }
+      img {
+        width: 70%;
+        border-radius: 10px;
+      }
+      .workBlockLeft {
         display: flex;
         align-items: center;
-        gap: 20px;
-        h5 {
-          font-size: 20px;
-          font-weight: 600;
-          color: rgb(255, 98, 0);
+        gap: 10px;
+        position: relative;
+        cursor: pointer;
+        width: 90%;
+        .workBlockLeftText {
+          display: flex;
+          align-items: end;
+          flex-direction: column;
+          position: absolute;
+          top: 0;
+          right: 0;
+          gap: 20px;
+          z-index: 46;
+          .leftTextBlockDes {
+            width: 460px;
+            height: 180px;
+            border-radius: 20px;
+            background: slategrey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+              width: 90%;
+            }
+          }
+
+          .leftTextBlockIcons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            a {
+              font-size: 20px;
+            }
+            a:hover {
+              color: rgb(255, 98, 0);
+              transform: scale(1.1);
+              transition: 0.5s;
+            }
+          }
         }
+      }
+      .hr {
+        margin: 50px 0;
+        background: white;
+        width: 90%;
+        height: 0.5px;
+      }
+      .workBlockRight {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 10px;
+        position: relative;
+        cursor: pointer;
+        width: 90%;
+        .workBlockRightText {
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          position: absolute;
+          top: 0;
+          left: 0;
+          gap: 20px;
+          z-index: 46;
+          .rightTextBlockDes {
+            width: 460px;
+            height: 180px;
+            border-radius: 20px;
+            background: slategrey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+              width: 90%;
+            }
+          }
+          .rightTextBlockIcons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            a {
+              font-size: 20px;
+            }
+            a:hover {
+              color: rgb(255, 98, 0);
+              transform: scale(1.1);
+              transition: 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .work {
+    .workAll {
+      .workMe {
         h1 {
-          font-size: 30px;
-          font-weight: 600;
+          font-size: 25px;
+        }
+        h5 {
+          font-size: 15px;
         }
         hr {
-          width: 200px;
-          margin-left: 40px;
+          width: 150px;
         }
       }
       .workBlocks {
-        display: flex;
-        align-items: start;
-        flex-direction: column;
-        gap: 200px;
+        h1 {
+          font-size: 15px;
+        }
+        h3 {
+          font-size: 20px;
+        }
         .workBlockLeft {
-          display: flex;
-          align-items: center;
-          gap: 10px;
-          position: relative;
-          cursor: pointer;
-          width: 90%;
-          img {
-            width: 70%;
-            border-radius: 10px;
-          }
           .workBlockLeftText {
-            display: flex;
-            align-items: end;
-            flex-direction: column;
-            position: absolute;
-            top: 0;
-            right: 0;
-            gap: 20px;
-            z-index: 46;
-            h3 {
-              font-size: 20px;
-              color: rgb(255, 98, 0);
-              font-weight: 600;
-            }
             .leftTextBlockDes {
-              width: 460px;
-              height: 180px;
-              border-radius: 20px;
-              background: slategrey;
-              display: flex;
-              align-items: center;
-              justify-content: center;
+              border-radius: 10px;
+              width: 300px;
+              height: 120px;
               p {
-                width: 400px;
+                font-size: 12px;
               }
-            }
-            h1 {
-              font-weight: 600;
-              color: white;
-              font-size: 20px;
-            }
-            .leftTextBlockIcons {
-                display: flex;
-                align-items: center;
-                gap: 20px;
-                a {
-                    font-size: 20px;
-                }
-                a:hover {
-                    color: rgb(255, 98, 0);
-                    transform: scale(1.1);
-                    transition: 0.5s;
-                }
             }
           }
         }
         .workBlockRight {
-            display: flex;
-            align-items: center;
-            justify-content: end;
-            gap: 10px;
-            position: relative;
-            cursor: pointer;
-            width: 90%;
-            .workBlockRightText {
-              display: flex;
-              align-items: start;
-              flex-direction: column;
-              position: absolute;
-              top: 0;
-              left: 0;
-              gap: 20px;
-              z-index: 46;
-              h3 {
-                font-size: 20px;
-                color: rgb(255, 98, 0);
-                font-weight: 600;
-              }
-              .rightTextBlockDes {
-                width: 460px;
-                height: 180px;
-                border-radius: 20px;
-                background: slategrey;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                p {
-                  width: 400px;
-                }
-              }
-              h1 {
-                font-weight: 600;
-                color: white;
-                font-size: 20px;
-              }
-              .rightTextBlockIcons {
-                  display: flex;
-                  align-items: center;
-                  gap: 20px;
-                  a {
-                      font-size: 20px;
-                  }
-                  a:hover {
-                      color: rgb(255, 98, 0);
-                      transform: scale(1.1);
-                      transition: 0.5s;
-                  }
-              }
-            }
-            img {
-              width: 70%;
+          .workBlockRightText {
+            .rightTextBlockDes {
               border-radius: 10px;
+              width: 300px;
+              height: 120px;
+              p {
+                font-size: 12px;
+              }
             }
           }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .work {
+    .workAll {
+      .workMe {
+        h5 {
+          font-size: 15px;
+        }
+        h1 {
+          font-size: 20px;
+        }
+        hr {
+          width: 150px;
+        }
+      }
+      .workBlocks {
+        h1 {
+          font-size: 12px;
+        }
+        h3 {
+          font-size: 15px;
+        }
+
+        .workBlockLeft {
+          .workBlockLeftText {
+            gap: 5px;
+            .leftTextBlockDes {
+              width: 250px;
+              height: 120px;
+              p {
+                font-size: 12px;
+              }
+            }
+            .leftTextBlockIcons {
+              a {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+        .workBlockRight {
+          .workBlockRightText {
+            gap: 5px;
+            .rightTextBlockDes {
+              width: 250px;
+              p {
+                font-size: 12px;
+              }
+            }
+            .rightTextBlockIcons {
+              a {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .work {
+    .workAll {
+      .workBlocks {
+        gap: 30px;
+        h1 {
+          font-size: 10px;
+        }
+        h3 {
+          font-size: 15px;
+          padding-inline: 10px;
+          padding-block: 5px;
+          border-radius: 10px;
+          background: #000000b7;
+        }
+        img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+        }
+        .workBlockLeft {
+          .workBlockLeftText {
+            top: 40px;
+            gap: 5px;
+            .leftTextBlockDes {
+              width: 200px;
+              height: 80px;
+              p {
+                font-size: 9px;
+              }
+            }
+            .leftTextBlockIcons {
+              gap: 5px;
+              a {
+                font-size: 10px;
+                padding: 10px;
+                background: #00000064;
+                border-radius: 10px;
+              }
+            }
+          }
+        }
+        .hr {
+          margin: 0;
+        }
+        .workBlockRight {
+          .workBlockRightText {
+            top: 40px;
+            gap: 5px;
+            .rightTextBlockDes {
+              width: 200px;
+              height: 80px;
+              p {
+                font-size: 9px;
+              }
+            }
+            .rightTextBlockIcons {
+              gap: 5px;
+              a {
+                font-size: 10px;
+                padding: 10px;
+                background: #00000090;
+                border-radius: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 445px) {
+  .work {
+    .workAll {
+      .workMe {
+        h1 {
+          font-size: 15px;
+        }
+        h3 {
+          font-size: 10px;
+        }
+        hr {
+          width: 100px;
+        }
+      }
+      .workBlocks {
+        gap: 30px;
+        h1 {
+          font-size: 10px;
+          width: 100%;
+          background: slategrey;
+        }
+        h3 {
+          font-size: 12px;
+          border-radius: 10px;
+          background: slategrey;
+          color: white;
+        }
+        img {
+          width: 100%;
+          height: 150px;
+          object-fit: cover;
+        }
+        .workBlockLeft {
+          .workBlockLeftText {
+            .leftTextBlockDes {
+              display: none;
+            }
+            .leftTextBlockIcons {
+              gap: 5px;
+              a {
+                font-size: 10px;
+                padding: 10px;
+                background: slategrey;
+                border-radius: 10px;
+              }
+            }
+          }
+        }
+        .hr {
+          margin: 0;
+        }
+        .workBlockRight {
+          .workBlockRightText {
+            .rightTextBlockDes {
+              display: none;
+            }
+            .rightTextBlockIcons {
+              a {
+                font-size: 10px;
+                padding: 10px;
+                background: slategrey;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 355px) {
+  .work {
+    .workAll {
+      .workMe {
+        h1 {
+          font-size: 15px;
+        }
+        h3 {
+          font-size: 10px;
+        }
+        hr {
+          width: 50px;
+        }
+      }
+      .workBlocks {
+        gap: 30px;
+        h1 {
+          font-size: 8px;
+        }
+        h3 {
+          font-size: 10px;
+          border-radius: 5px;
+          background: slategrey;
+          color: white;
+        }
+        .workBlockLeft {
+          .workBlockLeftText {
+            .leftTextBlockIcons {
+              a {
+                font-size: 10px;
+                padding: 5px;
+                background: slategrey;
+                border-radius: 2px;
+              }
+            }
+          }
+        }
+        .workBlockRight {
+          .workBlockRightText {
+            .rightTextBlockIcons {
+              a {
+                font-size: 10px;
+                padding: 5px;
+                background: slategrey;
+                border-radius: 2px;
+              }
+            }
+          }
+        }
       }
     }
   }

@@ -11,9 +11,10 @@ a {
 .container {
   margin: 0 auto;
   width: 90%;
+  padding-inline: 40px;
 }
 
-button{
+button {
   cursor: pointer;
 }
 

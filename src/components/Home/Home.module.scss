@@ -4,14 +4,14 @@
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
-  gap: 100px;
-  margin-bottom: 50px;
   .home {
+    width: 100%;
     margin-top: 50px;
-    width: 90%;
-    .container {
-      width: 90%;
-      margin: 0 auto;
+    .homeIndex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
       .homeText {
         display: flex;
         align-items: start;
@@ -27,32 +27,503 @@
           font-weight: 700;
         }
         p {
-          width: 600px;
+          width: 80%;
           span {
             color: rgb(255, 98, 0);
           }
         }
-        .podpis {
+        .blocks {
+          width: 100%;
           display: flex;
           align-items: center;
-          gap: 20px;
-          h6 {
-            font-family: "Poppins", sans-serif;
-            font-size: 25px;
+          .podpis {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            h6 {
+              font-family: "Poppins", sans-serif;
+              font-size: 25px;
+              font-weight: 600;
+            }
+            img {
+              width: 15%;
+            }
+          }
+          .img2 {
+            display: none;
+            width: 250px;
+            height: 350px;
+            position: relative;
+            cursor: pointer;
+            border-radius: 10px;
+            &:hover {
+              border: 2px solid rgb(255, 98, 0);
+              h2 {
+                transition: 0.8s;
+                border-bottom: 2px solid rgb(255, 98, 0);
+                text-shadow: 5px 5px 10px rgb(255, 98, 0);
+              }
+            }
+            .bg {
+              position: absolute;
+              top: 0;
+              left: 0;
+              background: rgba(0, 0, 0, 0.56);
+              width: 100%;
+              height: 100%;
+              border-radius: 10px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              h2 {
+                font-size: 20px;
+                font-weight: 600;
+                color: rgb(255, 98, 0);
+              }
+            }
+            img {
+              width: 100%;
+              height: 100%;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+      .homeBlock {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .buttons {
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          height: 350px;
+          justify-content: space-around;
+          button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 200px;
+            height: 40px;
+            border: 2px solid rgb(255, 98, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
             font-weight: 600;
+            transition: 0.8s;
+
+            &:hover {
+              transition: 0.8s;
+              background: rgb(255, 98, 0);
+            }
+          }
+          .lin:hover {
+            color: rgb(6, 97, 224);
+          }
+          .git:hover {
+            color: black;
+          }
+          .tele:hover {
+            color: rgb(6, 97, 224);
+          }
+          .insta:hover {
+            color: red;
+          }
+          .phon:hover {
+            color: rgb(7, 166, 7);
+          }
+          .mail:hover {
+            color: white;
+          }
+        }
+        .img {
+          width: 250px;
+          height: 350px;
+          position: relative;
+          cursor: pointer;
+          border-radius: 10px;
+          &:hover {
+            border: 2px solid rgb(255, 98, 0);
+            h2 {
+              transition: 0.8s;
+              border-bottom: 2px solid rgb(255, 98, 0);
+              text-shadow: 5px 5px 10px rgb(255, 98, 0);
+            }
+          }
+          .bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.56);
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h2 {
+              font-size: 20px;
+              font-weight: 600;
+              color: rgb(255, 98, 0);
+            }
           }
           img {
-            width: 15%;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
           }
         }
       }
     }
   }
-  .details {
-    margin-left: 200px;
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    gap: 100px;
+}
+@media (max-width: 1330px) {
+  .homeAll {
+    .home {
+      .homeIndex {
+        .homeText {
+          h6 {
+            font-size: 15px;
+          }
+          h1 {
+            font-size: 40px;
+          }
+          p {
+            font-size: 13px;
+            span {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1240px) {
+  .homeAll {
+    .home {
+      .homeIndex {
+        .homeText {
+          .podpis {
+            h6 {
+              font-size: 15px;
+            }
+            img {
+              height: 80px;
+              width: 100px;
+            }
+          }
+        }
+        .homeBlock {
+          .img {
+            width: 200px;
+            height: 300px;
+          }
+          .buttons {
+            height: 300px;
+            button {
+              width: 120px;
+              height: 30px;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .homeAll {
+    .home {
+      .homeIndex {
+        .homeText {
+          h6 {
+            font-size: 12px;
+          }
+          h1 {
+            font-size: 30px;
+          }
+          p {
+            font-size: 12px;
+            width: 90%;
+            line-height: 20px;
+            span {
+              font-size: 12px;
+            }
+          }
+          .blocks {
+            .podpis {
+              h6 {
+                font-size: 15px;
+              }
+              img {
+                height: 80px;
+                width: 100px;
+              }
+            }
+          }
+        }
+        .homeBlock {
+          .img {
+            width: 200px;
+            height: 300px;
+            .bg {
+              h2 {
+                font-size: 15px;
+              }
+            }
+          }
+          .buttons {
+            height: 300px;
+            button {
+              width: 120px;
+              height: 30px;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  .homeAll {
+    .home {
+      .homeIndex {
+        .homeBlock {
+          .img {
+            width: 150px;
+            height: 250px;
+            .bg {
+              h2 {
+                font-size: 15px;
+              }
+            }
+          }
+          .buttons {
+            height: 250px;
+            button {
+              width: 100px;
+              height: 25px;
+              font-size: 12px;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .homeAll {
+    .home {
+      .homeIndex {
+        flex-direction: column;
+        gap: 20px;
+        .homeBlock {
+          .img {
+            width: 450px;
+            height: 150px;
+            object-fit: cover;
+            .bg {
+              h2 {
+                font-size: 12px;
+              }
+            }
+          }
+          .buttons {
+            height: 100%;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 30px;
+            button {
+              width: 100px;
+              height: 25px;
+              font-size: 12px;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 730px) {
+  .homeAll {
+    .home {
+      .homeIndex {
+        .homeBlock {
+          .img {
+            width: 400px;
+            height: 100px;
+            object-fit: cover;
+            .bg {
+              h2 {
+                font-size: 12px;
+              }
+            }
+          }
+          .buttons {
+            height: 100%;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 20px;
+            button {
+              width: 100px;
+              height: 25px;
+              font-size: 12px;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 660px) {
+  .homeAll {
+    .home {
+      .homeIndex {
+        .homeText {
+          .blocks {
+            gap: 50px;
+            .podpis {
+              img {
+                width: 30%;
+                height: 50px;
+              }
+            }
+            .img2 {
+              display: block;
+              width: 100px;
+              height: 120px;
+              object-fit: cover;
+              border-radius: 0px;
+              img {
+                border-radius: 0px;
+              }
+              .bg {
+                border-radius: 0px;
+                h2 {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+        .homeBlock {
+          .img {
+            display: none;
+          }
+          .buttons {
+            height: 100%;
+            justify-content: start;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 20px;
+            button {
+              width: 100px;
+              height: 25px;
+              font-size: 12px;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .homeAll {
+    .home {
+      .homeIndex {
+        .homeBlock {
+          .buttons {
+            button {
+              width: 100px;
+              height: 20px;
+              font-size: 10px;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 445px) {
+  .homeAll {
+    .home {
+      .homeIndex {
+        .homeText {
+          h6 {
+            font-size: 12px;
+          }
+          h1 {
+            font-size: 20px;
+          }
+          p {
+            font-size: 10px;
+            span {
+              font-size: 10px;
+            }
+          }
+          .blocks {
+            gap: 10px;
+            .podpis {
+              h6 {
+                font-size: 12px;
+              }
+            }
+            .img2 {
+              width: 80px;
+              height: 100px;
+            }
+          }
+        }
+        .homeBlock {
+          .buttons {
+            gap: 10px;
+            button {
+              width: 100px;
+              height: 20px;
+              font-size: 10px;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 330px) {
+  .homeAll {
+    .home {
+      .homeIndex {
+        width: 100%;
+        .homeText {
+          width: 100%;
+          p {
+            width: 100%;
+            font-size: 10px;
+            span {
+              font-size: 10px;
+            }
+          }
+        }
+        .homeBlock {
+          .buttons {
+            gap: 10px;
+            button {
+              width: 70px;
+              height: 20px;
+              font-size: 8px;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
   }
 }

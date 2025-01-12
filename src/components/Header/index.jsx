@@ -1,13 +1,13 @@
 import React from "react";
 import dev from "../../assets/image/kyazdevbg-Photoroom.png";
-import {NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import scss from "./Header.module.scss";
-
+import { MdOutlineMenuOpen } from "react-icons/md";
 
 const Header = () => {
   return (
     <div className={scss.header}>
-      <div className={scss.container}>
+      <div className="container">
         <div className={scss.headerDetail}>
           <div className={scss.headerImage}>
             <img src={dev} alt="logo" />
@@ -30,6 +30,9 @@ const Header = () => {
               Контакты
             </NavLink>
           </div>
+          {/* <a className={scss.menu}>
+            <MdOutlineMenuOpen />
+          </a> */}
         </div>
       </div>
     </div>
